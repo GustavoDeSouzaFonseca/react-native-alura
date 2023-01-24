@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header";
+import Topo from "./components/Topo"
 
 export default function Home(){
-    return <Header/>
+    return <Topo/>
 }
