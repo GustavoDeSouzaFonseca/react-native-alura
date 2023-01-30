@@ -1,6 +1,6 @@
 import green from '../Screens/Home/assets/produtores/green.png'
 import salad from '../Screens/Home/assets/produtores/salad.png'
-import jennyJack from '../Screens/Home/assets/produtores/jennyJack.png'
+import jennyJack from '../Screens/Home/assets/produtores/jenny-jack.png'
 import grow from '../Screens/Home/assets/produtores/grow.png'
 import potager from '../Screens/Home/assets/produtores/potager.png'
 
@@ -10,35 +10,35 @@ const generateRandomNumber = (min, max) => {
 
 const producter = {
     title: "Producter",
-    list:[
+    listProducter:[
         {
             name:"Green",
             image: green,
-            distancia: `${generateRandomNumber(1, 500)}m`,
+            distance: `${generateRandomNumber(1, 500)}m`,
             stars: generateRandomNumber
         },
         {
             name:"Salad",
             image: salad,
-            distancia: `${generateRandomNumber(1, 500)}m`,
+            distance: `${generateRandomNumber(1, 500)}m`,
             stars: generateRandomNumber
         },
         {
             name:"Jenny Jack Farm",
             image: jennyJack,
-            distancia: `${generateRandomNumber(1, 500)}m`,
+            distance: `${generateRandomNumber(1, 500)}m`,
             stars: generateRandomNumber
         },
         {
             name:"Grow",
             image: grow,
-            distancia: `${generateRandomNumber(1, 500)}m`,
+            distance: `${generateRandomNumber(1, 500)}m`,
             stars: generateRandomNumber
         },
         {
             name:"Potager",
-            image: poteger,
-            distancia: `${generateRandomNumber(1, 500)}m`,
+            image: potager,
+            distance: `${generateRandomNumber(1, 500)}m`,
             stars: generateRandomNumber
         },
     ]
