@@ -1,20 +1,13 @@
 import React, { useEffect , useState } from "react";
 import { FlatList, Text, StyleSheet } from "react-native";
 import TheProducter from "./TheProducter";
-import { loadingProducter } from "../../../service/loadingData";
+import useProducters from "../../../hooks/useProductors";
 
 
 
 export default function Producter({ topo: Topo }){
 
-    const [title, setTitle] = useState('')
-    const [listProducter, setListProducter] = useState([])
-
-    useEffect(() => {
-        const comeBackProducter = loadingProducter();
-        setTitle(comeBackProducter.title);
-        setListProducter(comeBackProducter.listProducter)
-    }, []);
+    const [title, listProducter] = useProducters();
 
     const HeaderListProducter = () => {
         return <>
